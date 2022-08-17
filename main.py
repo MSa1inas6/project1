@@ -106,6 +106,7 @@ time.sleep(1)
 print(".")
 time.sleep(1)
 print(".")
+time.sleep(1)
 print("Connected")
 time.sleep(2)
 cnx = mysql.connector.connect(user=c.user, password=c.password, host=c.host, database="pythonlogin")
@@ -117,7 +118,7 @@ cursor = cnx.cursor()
 
 
 
-
+importemail=NULL
 while True:
     clear_console()
     print("welcome to my shop!")
@@ -127,8 +128,6 @@ while True:
     
     if choice==1:
         importemail=login(cursor)
-        
-        
     elif choice==2:
         createaccount(cursor)
     elif choice==5:
